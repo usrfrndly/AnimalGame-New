@@ -1,0 +1,62 @@
+using UnityEngine;
+using System.Collections;
+
+public class CameraControllerNew : MonoBehaviour {
+
+	public GameObject player1;
+	public GameObject player2;
+ 
+
+	public BirdController player1Input; 
+	public KangarooController player2Input; 
+
+
+	public bool player1Active = true;
+	public bool player2Active = false;
+
+	GameObject defaultCamera;
+	GameObject cameraPlayer1;
+	GameObject cameraPlayer2;
+
+function Start(){
+	player1Input = player1.GetComponent("BirdController");
+	player2Input = player2.GetComponent("KangarooController");
+}
+
+
+
+function Update(){
+	if(Input.GetKeyDown(KeyCode.Keypad1))  {
+		print("1 key was pressed");
+		player1Active = true;
+	}
+	
+	if(Input.GetKeyDown(KeyCode.Keypad2))  {
+			print("2 key was pressed");
+
+		player2Active = true;
+	}
+	
+	if(player1Active){
+		switchToPlayer(player1Input, player2Input, cameraPlayer1);  
+	}
+	
+	if(player2Active){
+		switchToPlayer(player2Input, player1Input, cameraPlayer2);  
+	}
+	
+}
+
+function switchToPlayer(inputToEnable, inputToDisable, cameraLocation){
+	
+	inputToEnable.enabled = true;
+	
+	inputToDisable.enabled = false;
+	
+	defaultCamera.transform.position = cameraLocation.transform.position; //Consider lerping 
+	
+	defaultCamera.transform.roatation = cameraLocation.transform.rotation; //Consider lerping
+	}
+
+
+}
