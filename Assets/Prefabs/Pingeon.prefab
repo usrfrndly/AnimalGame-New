@@ -1,30 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &114390
+--- !u!1 &106208
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 464080}
+  - 4: {fileID: 402254}
   m_Layer: 0
   m_Name: startPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &117356
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 476124}
-  m_Layer: 0
-  m_Name: endPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,6 +82,7 @@ GameObject:
   - 20: {fileID: 2083342}
   - 124: {fileID: 12456584}
   - 114: {fileID: 11464308}
+  - 114: {fileID: 11462598}
   m_Layer: 0
   m_Name: Camera Left
   m_TagString: Untagged
@@ -115,6 +101,7 @@ GameObject:
   - 20: {fileID: 2080804}
   - 124: {fileID: 12454758}
   - 114: {fileID: 11421698}
+  - 114: {fileID: 11447112}
   m_Layer: 0
   m_Name: Camera Right
   m_TagString: Untagged
@@ -122,6 +109,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &191202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 432924}
+  m_Layer: 0
+  m_Name: endPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402254
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 489996}
+  m_RootOrder: 1
 --- !u!4 &404538
 Transform:
   m_ObjectHideFlags: 1
@@ -148,6 +162,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 404538}
   m_RootOrder: 1
+--- !u!4 &432924
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 489996}
+  m_RootOrder: 2
 --- !u!4 &443162
 Transform:
   m_ObjectHideFlags: 1
@@ -160,30 +186,6 @@ Transform:
   m_Children:
   - {fileID: 404538}
   m_Father: {fileID: 489996}
-  m_RootOrder: 2
---- !u!4 &464080
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114390}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 489996}
-  m_RootOrder: 1
---- !u!4 &476124
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117356}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 489996}
   m_RootOrder: 0
 --- !u!4 &489996
 Transform:
@@ -192,12 +194,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.78999996, y: 13.3999996, z: -271.670013}
-  m_LocalScale: {x: 1.71000004, y: .5, z: -9.86999989}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.71000004, y: .300000012, z: -9.86999989}
   m_Children:
-  - {fileID: 476124}
-  - {fileID: 464080}
   - {fileID: 443162}
+  - {fileID: 402254}
+  - {fileID: 432924}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &493594
@@ -429,6 +431,44 @@ MonoBehaviour:
   toggleCullingMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &11447112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweakMode: 1
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 10
+  quality: 1
+  bloomIntensity: .5
+  bloomThreshold: -.0500000007
+  bloomThresholdColor: {r: 1, g: 0, b: .931034565, a: 1}
+  bloomBlurIterations: 4
+  hollywoodFlareBlurIterations: 1
+  flareRotation: 0
+  lensflareMode: 1
+  hollyStretchWidth: 0
+  lensflareIntensity: 10
+  lensflareThreshold: 0
+  lensFlareSaturation: 1.09000003
+  flareColorA: {r: 1, g: 0, b: 1, a: 1}
+  flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
+  flareColorC: {r: .800000012, g: .400000006, b: .800000012, a: .75}
+  flareColorD: {r: .800000012, g: .400000006, b: 0, a: .75}
+  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
+    type: 3}
+  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
+  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
+    type: 3}
 --- !u!114 &11461346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,14 +481,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal: 1
-  endPoint: {fileID: 476124}
-  startPoint: {fileID: 464080}
+  endPoint: {fileID: 0}
+  startPoint: {fileID: 0}
   FloorLayer:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 30
+  moveSpeed: 40
   jumpHeight: 100
   rotateSpeed: 50
+--- !u!114 &11462598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweakMode: 1
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 10
+  quality: 1
+  bloomIntensity: .5
+  bloomThreshold: -.0500000007
+  bloomThresholdColor: {r: 1, g: 0, b: .931034565, a: 1}
+  bloomBlurIterations: 4
+  hollywoodFlareBlurIterations: 1
+  flareRotation: 0
+  lensflareMode: 1
+  hollyStretchWidth: 0
+  lensflareIntensity: 10
+  lensflareThreshold: 0
+  lensFlareSaturation: 1.09000003
+  flareColorA: {r: 1, g: 0, b: 1, a: 1}
+  flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
+  flareColorC: {r: .800000012, g: .400000006, b: .800000012, a: .75}
+  flareColorD: {r: .800000012, g: .400000006, b: 0, a: .75}
+  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
+    type: 3}
+  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
+  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
+    type: 3}
 --- !u!114 &11464308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -504,7 +582,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: FloorLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137680}

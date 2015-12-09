@@ -1,0 +1,44 @@
+--Street lamp
+Geometry
+poly:260
+verts:280
+Map:diffuse:1024x1024 png
+
+--Street bench
+Map:diffuse:1024x1024 png
+Geometry
+poly:567
+Verts:610
+
+Hydrant:
+map:tga,png
+2048x2048
+diffuse
+normal
+
+poly:500
+verts:250
+
+Mailbox:
+map:tga,png
+2048x2048
+diffuse
+normal
+
+poly:168
+verts:96
+
+Trash bin:
+map:tga,png
+2048x2048
+diffuse
+normal
+
+poly:400
+verts:208
+
+
+have fun!!!
+
+My Contackt:brudva@gmail.com 
+

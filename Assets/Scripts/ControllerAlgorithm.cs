@@ -10,7 +10,7 @@ public class ControllerAlgorithm : MonoBehaviour
     protected Rigidbody myRigibody; // To get the rigibody component attached.
     protected float moveVertical, moveHorizontal; //To obtain my Axis input.
     protected bool isGrounded = true; // Able to move if I'm on the floor or any Object that I can stand up.
-    protected float gravityScale = 100f; // How far I will fall once I jump.
+    protected float gravityScale = 100f; // How fast I will fall once I jump.
 
     //PUBLIC FIELDS.
     public Animals animal = Animals.KANGAROO; //Default Setting ( Change on editor in order to get anything else by default)

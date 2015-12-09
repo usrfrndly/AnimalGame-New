@@ -10,12 +10,14 @@ public class ButtonSwapScript : MonoBehaviour
         currentAnimal = GameObject.FindGameObjectWithTag("Player");
 
         if (currentAnimal == null)
-            Instantiate(animal, transform.position, Quaternion.identity);
+			Instantiate(animal, animal.transform.position, Quaternion.identity);
+			
+
 
         else
         {
             Destroy(currentAnimal);
-            Instantiate(animal, transform.position, Quaternion.identity);
+            Instantiate(animal, animal.transform.position, Quaternion.identity);
         }
     }//Spawn Function
 
